@@ -24,6 +24,10 @@ const port = 3000;
 
 // DATA - put into marsMissions.js file inside of a models folder, for module.exports
 // remember to require it in the server
+
+const marsMissions = require('./models/marsMissions');
+
+/* 
 const marsMissions = [
   {
     name: "Curiosity",
@@ -61,6 +65,7 @@ const marsMissions = [
     img: ""
   }
 ];
+ */
 
 // INDEX Route
 // send data to 'missions/index.ejs' view
