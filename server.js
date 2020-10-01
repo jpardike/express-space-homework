@@ -86,6 +86,15 @@ app.get('/missions', (req, res) => {
 // send data to 'missions/show.ejs' view
 // the view should display all the data for a single mission
 
+app.get('/missions/:id', (req, res) => {
+  const missionIndex = req.params.id;
+  const mission = marsMissions[missionIndex];
+
+  res.render('missions/show', {
+    mission: mission,
+    missionIndex: missionIndex
+  });
+});
 
 
 // LISTENER
