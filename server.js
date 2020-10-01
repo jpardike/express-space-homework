@@ -76,6 +76,12 @@ const marsMissions = [
 // the view should display just the names of each mission
 // display the mission names as <li> in a <ul> with the class name "missions"
 
+app.get('/missions', (req, res) => {
+  res.render('missions/index', {
+    marsMissions: marsMissions
+  });
+});
+
 // SHOW Route
 // send data to 'missions/show.ejs' view
 // the view should display all the data for a single mission
