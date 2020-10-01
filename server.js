@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 
+
 // run `npm install` to install dependencies in package.json
 
 // * Your mission is to complete the app
@@ -21,6 +22,9 @@ const app = express();
 
 // PORT
 const port = 3000;
+
+// EJS
+app.set('view engine', 'ejs');
 
 // DATA - put into marsMissions.js file inside of a models folder, for module.exports
 // remember to require it in the server
